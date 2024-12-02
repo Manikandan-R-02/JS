@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#heading{
+    padding: 2px;
+    font-family:monospace;
+    color:red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#color{
+    font-size:xx-large;
+    margin-right:  30px ;
+    font-weight: bold;
+}
+hr{
+    border-color: black;
+    border: 2px solid;
+}
+#wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height for centering */
+}
+button {
+    color: white;
+    background-color: red;
+    border: 2px solid darkred;
+    border-radius: 5px;
+    padding: 5px;
+    width: 150px;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Add smooth transitions */
+}
+button:hover {
+    background-color: darkred;
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    cursor: pointer;
+}
+@media (max-width: 600px) {
+    button {
+        margin: 20px auto;
+        width: 100px;
+        font-size: small;
+    }
+    #color {
+        font-size: large;
+    }
+}
