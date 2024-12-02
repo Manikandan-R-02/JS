@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>words calculator</title>
+    <link rel="stylesheet" href="wc.css">
+</head>
+<body>
+    <div class="outbox">
+
+        <div class="title">
+            <h3 class="title-name">Words Calculator</h3>
+        </div>
+
+        <div class="input">
+            <textarea id="input" placeholder="enter words"></textarea>
+        </div>
+
+        <div class="button">
+            <button type="submit" onclick="calculate()">Calculate</button>
+        </div>
+
+        <div id="result">
+
+        </div>
+
+    </div>
+    <script>
+        function calculate()  {
+
+        let text=document.getElementById("input").value;
+        let clean=text.trim();
+        let array=clean.split(/\s+/)
+        let count=array.length;
+        
+        if(clean===""){
+            count=0;
+        }
+        let result=document.getElementById("result")
+        result.innerHTML= `${count} words  are given`;
+       }
+    </script>
+</body>
+</html>
