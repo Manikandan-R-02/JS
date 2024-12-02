@@ -1,0 +1,91 @@
+body {
+    background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    margin: 0;
+    font-family: sans-serif, 'Poppins';
+}
+
+#form {
+    border: 2px solid orange;
+    width: 400px;
+    margin: 20vh auto 0;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+    margin-top: 75px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(240, 217, 12);
+}
+
+#form button {
+    background-color: rgb(235, 187, 16);
+    color: white;
+    border: 2px solid orange;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+#form button:hover {
+    background-color: rgb(255, 200, 50);
+}
+
+#form button:focus {
+    outline: 2px solid rgb(255, 200, 50);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.input-group input {
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid yellow;
+    transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+    outline: 0;
+    border-color: orange;
+}
+
+.input-group .error {
+    color: darkred;
+    font-size: 14px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.input-group-success input {
+    border-color: green;
+}
+
+.input-group-error input {
+    border-color: red;
+}
+
+@media (max-width: 500px) {
+    #form {
+        width: 90%;
+        margin: 10vh auto;
+        padding: 20px;
+    }
+    .input-group input {
+        font-size: 16px;
+    }
+    #form button {
+        font-size: 18px;
+    }
+}
