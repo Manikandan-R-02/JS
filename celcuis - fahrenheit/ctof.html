@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celsius  to Fahrenteit</title>
+    <link rel="stylesheet" href="ctof.css">
+</head>
+<body>
+    <div class="outbox">
+
+        <div class="title">
+            <h3 class="title-name">Celcius to Fahrenteit</h3>
+        </div>
+
+        <div class="input">
+            <input type="text" id="input" placeholder="Enter Celsius">
+        </div>
+
+        <div class="button">
+            <button type="submit" onclick="convert()">Convert</button>
+        </div>
+
+        <div id="result">
+
+        </div>
+
+    </div>
+    <script>
+        function convert()  {
+
+        const cel = Number(document.getElementById("input").value);
+        const fah = cel * (9/5) + 32;
+        const result = document.getElementById("result");
+        result.innerHTML=fah +" °F";
+
+       }
+    </script>
+</body>
+</html>
