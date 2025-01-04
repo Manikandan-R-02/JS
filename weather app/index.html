@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 id="heading">Weather manager</h1>
+            <input type="text" id="input">
+            <br>
+            <button onclick="searchcity()">search</button>
+        </div>
+        <div class="result">
+            <h2 id="cityname">--------</h2>
+            <div>
+                <h1 id="weathertype">--------</h1> 
+                <div>
+                    <h3>Temp :<span id="temp"></span><span>℉</span></h3>
+                    <h3>Min Temp :<span id="min-temp"></span><span>℉</span></h3>
+                    <h3>Max Temp :<span id="max-temp"></span><span>℉</span></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
